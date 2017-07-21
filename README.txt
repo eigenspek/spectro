@@ -1,6 +1,8 @@
-Ce programme est fait pour jouer avec des données de spectrophotometre 
+Ce programme est fait pour jouer avec des données de spectro
 
-tous les programmes utilisent le module spectroD, pensez à l'importer si vous voulez créer vos propre programmes
+tous les programmes utilisent le module spectroD
+
+Avant tout, il est nécessaire de créer un dossier 'images-sources' puis 3 sous-dossiers '_background','_lightsource','_sample'.
 
 
 ABSORPTION.PY :
