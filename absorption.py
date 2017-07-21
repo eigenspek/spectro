@@ -11,7 +11,9 @@ print(" if done, please enter '0' ..." )
 input()
 
 spc_folder = os.getcwd()
-bkgnd = spD.avrgimgdir(spc_folder,'_background')
+
+# ----> No use for the background. 
+#bkgnd = spD.avrgimgdir(spc_folder,'_background')
 ### uncomment if background average spectrum needed : 
 #spD.specplot(bkgnd, 'background average spectrum')
 lgt = spD.avrgimgdir(spc_folder,'_lightsource')
@@ -22,6 +24,6 @@ smpl = spD.avrgimgdir(spc_folder,'_sample')
 #spD.specplot(smpl,' light spectrum with sample average sample' )
 
 os.chdir(spc_folder)
-absorption_spc = spD.subarrays(lgt,bkgnd,smpl)
+absorption_spc = spD.subarrays(lgt,smpl)
 spD.specplot(absorption_spc,' Absorption Spectrum ')
 
